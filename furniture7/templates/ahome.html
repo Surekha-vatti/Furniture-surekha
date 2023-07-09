@@ -1,0 +1,26 @@
+  <!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>ADMIN HOME PAGE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<style>
+        .main{
+            background-image: url("{% static 'image72.jpg' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+    </style>
+</head>
+<body class="main">
+<center><h1>THIS IS HOME PAGE</h1></center>
+<a href="{% url 'addproduct' %}"><input type="button" value="a_addproduct"></a>
+<a href="{% url 'viewproduct' %}"><input type="button" value="v_product"></a>
+<a href="{% url 'alastview' %}"><input type="button" value="lastview"></a>
+<a href="{% url 'alogout' %}"><input type="button" value="logout"></a>
+
+
+</body>
+</html>
